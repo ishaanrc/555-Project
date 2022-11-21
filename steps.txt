@@ -1,0 +1,55 @@
+python -m venv project
+source project/bin/activate
+pip install -r requirements.txt
+./sandbox up
+
+
+Writing contracts in Algorand
+Move to project directory
+cd contracts
+mkdir crypto
+touch contract-name.py
+build.sh <python module path>
+From the project sandbox folder
+./sandbox enter algod
+create an address for the creator: goal account list. if not available, create one
+
+view the data file and use goal CLI to use the smart contract : goal app create approval-prog /data/build/approval.teal --clear-prog /data/build/clear.teal --creator $ONE --global-ints 1 --global-byteslices 1 --local-inits 0 --local-byteslices 0
+
+goal app read --app-id 2 --global
+goal app read --app-id 2 --global --guess-format
+
+After implementing the entire contract
+We can deploy a new application with an updated id
+
+Calling increment
+
+Here $ONE contains the account address
+
+goal app call --app-id 3 --from $ONE --app-arg "str:inc" // for address, addr:<address?>, for int , uint64:<integer>
+
+def approval():
+	pass
+	// 99% of the business logic goes here and enables an online account to help participate in the smart contract
+	// global state or local state
+	// optin or optout or close out
+	// contract owner can update the application
+
+def clear():
+
+
+
+
+clear vs close out vs opt out
+//When the user wants to close out the smart contract can be rejected -- graceful
+// Clear is forcing the smart contract to close account. The consensus layer of the alforithm will close the account forcefully
+//Optout says tham the account will stop using it. what happens to the balance in this case? The account balance still remains with the contract until the closes out
+// In the global state, we can store 64Key values; in the local state, we can store a couple of KB in his account. 
+
+// Try learning Teal.
+
+// Algorand datatypes - unsigned integers and byte streams
+
+// Maintain a variable for an owner
+
+
