@@ -10,7 +10,7 @@ publicKey = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALoJfUHJ4wA5DgajmX85KnZy4JEwarUxQom
 privateKey = "MIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEAugl9QcnjADkOBqOZfzkqdnLgkTBqtTFCiaK/lweSqC2uFBuigm6NMDw9IDsHlKTCJVKxZf1+zssGLYRLA5IZ0QIDAQABAkB7w/Rg4D701wBNymlECnQFeUeNT/itsqfhiTSM9azL1PR6safJFQFsZRpCY/hw46kH6jvblkE7ZASNco2ilQQBAiEA7udLH2IFcNwvPUZ2nvfQ2p4wmpGNx/AlkPiZua4puPkCIQDHWa8lrql+xj/g5hWbgJK+B7mBnG7LJvP/A+3ieM81mQIhALtQnIUxvORdr6hSrEU+NwKCj8dRoqIGd93wHdAJb2s5AiEAu01Aix84kayjiCOmWZzMQ0/utCDO2IGY7xo6AHeR+MECIDcf1fb3xaT5fnajRh42Nx0gk3oB6MxB7rRSKO3vz8D2"
 
 ######
-os.system(' ./contracts/rps/challenge.sh {}'.format(str(publicKey)) )
+#os.system(' ./contracts/rps/challenge.sh {}'.format(str(publicKey)) )
 
 
 # Import socket module
