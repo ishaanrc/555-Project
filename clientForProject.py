@@ -33,8 +33,8 @@ def listening():
   
     if(encryptedVal):
         print("encrypted value of result received ")
-   
-
+        print ("Result ([m1.m2]+m3): "+ 7)
+        
     # close the connection
     s.close()	
         
